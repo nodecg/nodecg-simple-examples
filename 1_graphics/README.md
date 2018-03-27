@@ -1,6 +1,6 @@
 # Graphics
 
-Graphics are visual elements to use on stream. They have access to a global `nodecg` Object for interacting with NodeCG. While Dashboard Panels are locked behind whatever credentials you put on your NodeCG server, graphics are publicly exposed so that you can use them in your streaming software without any additional setup. Graphics cannot modify data in NodeCG, they are only permit to read.
+Graphics are visual elements to use on stream. They have access to a global `nodecg` Object for interacting with NodeCG.
 
 Graphics must reside in a `graphics` directory, but can be named anything.
 
