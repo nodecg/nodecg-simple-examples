@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#message {
+			font-size: 10em;
+		}
+	</style>
+</head>
+<body>
+	<div id="message"></div>
+</body>
+
+<script>
+	// We can access Replicants from other bundles by specifying the bundle name as a second parameter.
+	// NodeCG requires that bundle names match their directory names, but you can always check the `package.json` to double check.
+	const nameReplicant = nodecg.Replicant('name', '0_dashboards');
+
+	// Change will be called when the Replicant loads too, so we can use it to set the initial value.
+	nameReplicant.on('change', (newValue, oldValue) => {
+		message.innerText = `Hello, ${newValue}!`;
+	});
+</script>
+</html>

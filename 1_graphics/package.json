@@ -1,0 +1,22 @@
+{
+  "name": "1_graphics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+
+  "nodecg": {
+    "compatibleRange": ">=0.9",
+    "graphics": [
+      {
+        "file": "hello-world.html",
+        "width": 1920,
+        "height": 1080
+      }
+    ]
+  }
+}

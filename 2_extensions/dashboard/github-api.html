@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<label>Search github:</label>
+	<input id="queryInput" type="text" value="nodecg"></input>
+	<button id="submitButton">Submit</button>
+
+	<div id="results"></div>
+</body>
+
+<script>
+	const queryInput = document.querySelector('#queryInput');
+	const submitButton = document.querySelector('#submitButton');
+
+	submitButton.onclick = () => {
+		nodecg.sendMessage('findRepositories', queryInput.value);
+	};
+
+
+	const githubResultsReplicant = nodecg.Replicant('github-results');
+
+	const results = document.querySelector('#results');
+
+	githubResultsReplicant.on('change', (newValue, oldValue) => {
+		if (!newValue) {
+			return;
+		}
+
+		results.innerHTML = '';
+
+		newValue.forEach(result => {
+			results.insertAdjacentHTML('beforeend', `<div><a href="${result.html_url}">${result.full_name}</a></div>`);
+		});
+	});
+</script>
+</html>

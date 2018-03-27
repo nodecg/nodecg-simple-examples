@@ -1,0 +1,24 @@
+{
+  "name": "0_dashboards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+
+  "nodecg": {
+    "compatibleRange": ">=0.9",
+    "dashboardPanels": [
+      {
+        "name": "hello-world",
+        "title": "Hello World",
+        "width": 3,
+        "file": "hello-world.html",
+        "headerColor": "#9f9bbd"
+      }
+    ]
+  }
+}

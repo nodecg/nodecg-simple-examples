@@ -1,0 +1,26 @@
+{
+  "name": "2_extensions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "nodecg": {
+    "compatibleRange": ">=0.9",
+    "dashboardPanels": [
+      {
+        "name": "github-api",
+        "title": "Github API",
+        "width": 2,
+        "file": "github-api.html",
+        "headerColor": "#3d3d3d"
+      }
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}

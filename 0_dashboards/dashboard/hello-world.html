@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<label>Enter a name:</label>
+	<input id="nameInput" type="text"></input>
+	<button id="submitButton">Submit</button>
+</body>
+
+<script>
+	const nameInput = document.querySelector('#nameInput');
+	const submitButton = document.querySelector('#submitButton');
+
+	const nameReplicant = nodecg.Replicant('name');
+
+	nameReplicant.on('change', (newValue, oldValue) => {
+		// The value of the Replicant has changed somewhere in NodeCG,
+		// this could be another dashboard panel, a server initiated change,
+		// or the doing of another user accessing your dashboard panel.
+		nameInput.value = newValue;
+	});
+
+	submitButton.onclick = () => {
+		// A Replicant can be modified by modifying its `value`.
+		nameReplicant.value = nameInput.value;
+	};
+</script>
+</html>
