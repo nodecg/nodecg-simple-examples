@@ -1,0 +1,50 @@
+{
+	"name": "p5-tutorial",
+	"version": "1.0.0",
+	"description": "A tutorial package using p5.js",
+	"author": {
+		"name": "Ewan lyon"
+	},
+	"files": [
+		"dashboard",
+		"graphics",
+		"extension.js",
+		"extension"
+	],
+	"nodecg": {
+		"compatibleRange": "1.4.0",
+		"dashboardPanels": [
+			{
+				"name": "lower-third",
+				"title": "Lower Third",
+				"width": 3,
+				"file": "lower-third.html",
+				"headerColor": "#525F78",
+				"workspace": "p5.js"
+			},
+			{
+				"name": "counter",
+				"title": "Counter",
+				"width": 2,
+				"file": "counter.html",
+				"headerColor": "#525F78",
+				"workspace": "p5.js"
+			}
+		],
+		"graphics": [
+			{
+				"file": "lower-third.html",
+				"width": 1920,
+				"height": 1080
+			},
+			{
+				"file": "counter.html",
+				"width": 1920,
+				"height": 1080
+			}
+		]
+	},
+	"scripts": {
+		"start": "node ../.. --bundlesEnabled=p5-tutorial"
+	}
+}

@@ -13,3 +13,7 @@ How a broadcast ready graphic can hook into NodeCG.
 ## 2_extensions
 
 Using extensions to run server side code.
+
+## frameworks
+
+How other frameworks and libraries can be used with NodeCG.
