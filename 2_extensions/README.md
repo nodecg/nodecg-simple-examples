@@ -24,7 +24,7 @@ module.exports = nodecg => {
 }
 ```
 
-For more information, see http://nodecg.com/index.html#extensions
+For more information, see https://nodecg.com/docs/concepts-and-terminology#extensions
 
 ## Example
 
