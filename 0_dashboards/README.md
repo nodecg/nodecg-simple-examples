@@ -6,7 +6,7 @@ Dashboard Panels must reside in a `dashboard` directory, but can be named anythi
 
 Each Dashboard Panel must be identified in the `package.json` using the following `nodecg` schema. The key point to note here is that the `file` specifies a path to the dashboard panel relative to the `dashboard` directory.
 
-For more information, see http://nodecg.com/tutorial-manifest.html
+For more information, see https://nodecg.com/docs/manifest
 
 ```json
 "nodecg": {
@@ -27,7 +27,7 @@ Note that `dashboardPanels` is an array, meaning that you can specify multiple p
 
 ## Replicants
 
-http://nodecg.com/NodeCG.html#Replicant
+https://nodecg.com/docs/classes/replicant
 
 Replicants allow for the passing of values throughout NodeCG and, in my experience, will be your most commonly used aspect of NodeCG.
 

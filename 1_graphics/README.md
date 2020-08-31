@@ -6,7 +6,7 @@ Graphics must reside in a `graphics` directory, but can be named anything.
 
 Each Graphic must be identified in the `package.json` using the following `nodecg` schema. The key point to note here is that the `file` specifies a path to the graphic relative to the `graphics` directory.
 
-For more information, see http://nodecg.com/tutorial-manifest.html
+For more information, see https://nodecg.com/docs/manifest
 
 ```json
 "nodecg": {
