@@ -1,6 +1,6 @@
 # ncg-p5-tutorial
 
-Basic bundle for people to use [p5.js](https://p5js.org/) and [NodeCG](https://nodecg.com/).
+Basic bundle for people to use [p5.js](https://p5js.org/) and [NodeCG](https://nodecg.dev/).
 
 ## Graphics
 
